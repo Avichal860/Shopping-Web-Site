@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sample</title>
+
+	<style type="text/css">
+	.nav{
+		/*border: 2px solid red;*/
+		height:45px;
+		width: auto;
+		background-color: black;
+		margin: 0px;
+		position: 
+
+	}
+	
+	.ul li{
+		list-style-type: none;
+		display: inline-block;
+		padding-right: 20px;
+		padding-top: 13px;
+		margin-left: 40px;
+
+	}
+	.ul li a{
+		text-decoration: none;
+		color:white;
+		font-family:  Lucida Handwriting;
+	}
+	.li a:hover {
+		color: lightgrey;
+		transition: 2s;	
+	} 
+	.logo{
+		margin-left: 670px;
+		margin-top: -35px;
+		position: absolute;
+		height: 43.50px;
+		width: auto
+	}
+	.bar{
+		/*border: 2px solid red;*/
+		height:30px;
+		width: auto;
+		background-color: lightgrey;
+	}
+	p{
+
+		margin-left: 300px;
+		margin-top: 5px;
+		position: absolute;		
+	}
+	.p{
+		color: black;
+	}
+	.body{
+		/*border: 2px solid red;*/
+		height:680px;
+		width: auto;
+		background-color: rgb(81, 103, 103);
+
+	}
+	#demo{
+                margin-top: 20%;
+                margin-left: 43%;
+                color: lightgrey;
+                position: absolute;
+                font-size: 30px;
+                animation: time 5s infinite;
+            }
+            @keyframes time{
+            	0%{text-shadow:0px 0px 20px;color:lightgrey;}
+           50%{text-shadow:0px 0px 20px;color:white;}
+           100%{text-shadow:0px 0px 20px;color:lightgrey;}
+            }
+	.con{
+		
+		height:680px;
+		width: auto;
+		background-color: rgb(81, 103, 103);
+		
+	
+	}
+    #b1{
+    	height: 40px;
+    	width: 150px;
+    	position: absolute;
+     	margin-left:550px;
+     	margin-top: 630px;
+     	font-family:  Lucida Handwriting;
+     	font-weight: 700;
+
+
+    }
+	.i1{
+		position: absolute;
+		height: 30px;
+		width: 30px;
+		margin-left: 1200px;
+		margin-top: -30px;
+	}
+	.i1:hover{
+		height: 35px;
+		width: 35px;
+		transition: 0.3s; 
+	}
+	.i2{
+		position: absolute;
+		height: 30px;
+		width: 30px;
+		margin-left: 1250px;
+		margin-top: -30px;
+	}
+	.i2:hover{
+		height: 35px;
+		width: 35px;
+		transition: 0.3s; 
+	}
+	.i3{
+		position: absolute;
+		height: 30px;
+		width: 30px;
+		margin-left: 1300px;
+		margin-top: -30px;
+	}
+	.i3:hover{
+		height: 35px;
+		width: 35px;
+		transition: 0.3s; 
+	}
+
+
+
+
+
+
+
+
+
+*{
+	/* removing any padding that might become problematic */
+	margin: 0	;
+	padding: 0;
+	}
+	
+	/*body{
+	margin: 30px 15%;
+	background: #ccc;
+	font-family: tahoma, arial, verdana; 
+	}*/
+	
+
+	.main1 li{
+	/* forgot to put '.main' - 40 min debug :) */
+	position: relative;
+	display: block;
+	width: 200px;
+	float:left;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	
+	.main1 ul{
+	width:2000px;
+	}
+	
+	border-left: 1px solid rgba(0,0,0,0.65);
+	box-shadow: 0 0 20px 10px rgba(0,0,0,0.45);
+	-webkit-box-shadow: 0 0 20px 10px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0 0 20px 10px rgba(0,0,0,0.45);
+	}
+	
+	.slidetitle{
+	/* initializing squares */
+	background: rgba(0,0,0,.65);
+	
+	/* position on bottom */
+	position: absolute;
+	left:0;
+	bottom:0;
+	width: 1150px;
+	}
+	
+	.slidetitle span{
+	/* titles follow here
+	some values have to be exact */
+	display: block;
+	color: white;
+	padding: 20px;
+	font-size: 16px;
+	}
+	
+	
+	
+	.main1{
+	/* some calculus */
+	margin-top: 120px;
+	margin-left: 90px;
+	position: absolute;
+	width: 1300px;
+	height: 520px;
+	overflow: hidden;
+	box-shadow: 0px 0px 10px 3px #888888;
+	-moz-box-shadow: 0px 0px 10px 3px #888888;
+	-webkit-box-shadow: 0px 0px 10px 3px #888888;
+	}
+	
+	.main1 li img{
+	display:block;
+	height: 520px;
+	width: 700px;
+	}
+	
+	/* when u hover over the entire list, the default value is set to 40 */
+	.main1 ul:hover li{
+	width:130px;
+	}
+	
+	/* however, when you hover on a particular element from that list, the value is overriden. that's why the above comes first ^ */
+	.main1 ul li:hover{
+	width:640px;
+	}
+	.slider{
+		height: 700px;
+		width: auto;
+		background-color: rgb(81, 103, 103);
+	}
+
+
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  background-color: #717171;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.car {
+  
+  margin: 0;
+  display: grid;
+  grid-template-rows: 500px 100px;
+  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+main#carousel {
+  grid-row: 1 / 2;
+  grid-column: 1 / 8;
+  width: 1500px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  --items: 5;
+  --middle: 3;
+  --position: 1;
+  pointer-events: none;
+}
+
+div.item {
+  position: absolute;
+  width: auto;
+  height: 400px;
+  
+  --r: calc(var(--position) - var(--offset));
+  --abs: max(calc(var(--r) * -1), var(--r));
+  transition: all 0.25s linear;
+  transform: rotateY(calc(-10deg * var(--r)))
+    translateX(calc(-300px * var(--r)));
+  z-index: calc((var(--position) - var(--abs)));
+}
+
+div.item:nth-of-type(1) {
+  --offset: 1;
+  
+}
+div.item:nth-of-type(2) {
+  --offset: 2;
+  
+}
+div.item:nth-of-type(3) {
+  --offset: 3;
+  
+}
+div.item:nth-of-type(4) {
+  --offset: 4;
+  
+}
+div.item:nth-of-type(5) {
+  --offset: 5;
+  
+}
+
+input:nth-of-type(1) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(1):checked ~ main#carousel {
+  --position: 1;
+}
+
+input:nth-of-type(2) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(2):checked ~ main#carousel {
+  --position: 2;
+}
+
+input:nth-of-type(3) {
+  grid-column: 4 /5;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(3):checked ~ main#carousel {
+  --position: 3;
+}
+
+input:nth-of-type(4) {
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(4):checked ~ main#carousel {
+  --position: 4;
+}
+
+input:nth-of-type(5) {
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(5):checked ~ main#carousel {
+  --position: 5;
+}
+.img{
+  height: 700px;
+  width: auto;
+}
+.dot{
+  margin-top: 140px;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+	</style>
+</head>
+<body>
+<div class="nav">
+ <ul class="ul">
+ 	<li><a href="#">MEN</a></li>
+ 	<li><a href="#">WOMEN</a></li>
+ 	<LI><a href="#">NEW ARRIVALS</a></LI>
+ </ul>
+<img class="logo" src="stock-footage-letter-p-logo-design-creative-modern-icon-p.gif"></img>
+        <a href="#"><img class="i1" src="images__1_-removebg-preview (1).png"></a>
+ <a href="#"><img class="i2" src="png-transparent-computer-icons-mobile-app-development-android-my-account-icon-blue-text-logo-removebg-preview-removebg-preview.png"></a>
+ <a href="#"><img class="i3" src="images-removebg-preview.png"></a>
+ 
+</div>
+<div class="bar">
+<p>Introducing (company name): our marketplace of dlightly imperfect products with a lower impact on the planet. <a class="p" href="#">Discover Now</a></p>
+</div>
+<div class="body">
+
+<!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("march 30, 2023 24:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "GO TO HELL";
+  }
+}, 1000);
+</script>
+<label></label>
+<input type="button" id="b1"  value="SHOP MEN " name="button"  >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label></label>
+<input type="button" id="b1" value="SHOP WOMEN " name="button"  >
+
+</div>
+<div class="con">
+	
+	
+	<div class="main1">
+	<ul>
+		<li>
+			<div class="slidetitle"> 
+				<span>Womens Wear</span>
+			</div>
+			<a href='#'>
+				<img src="71KVarW2b9L._AC._SR360,460.jpg"/>
+			</a>
+		</li>
+		<li>
+			<div class="slidetitle"> 
+				<span>Mens Wear</span>
+			</div>
+			<a href='#'>
+				<img src="4179946767354929eb8bf10137f20e8e.jpg"/>
+			</a>
+		</li>
+		<li>
+			<div class="slidetitle"> 
+				<span>Kids Wear</span>
+			</div>
+			<a href='#'>
+				<img src="556b9b0b29e898ba9656ac66b967f0eb.jpg"/>
+			</a>
+		</li>
+		<li>
+			<div class="slidetitle"> 
+				<span>Pawan</span>
+			</div>
+			<a href='#'>
+				<img src="VOLOCEAN-2018-New-Blinking-Tshirt-Women-Shiny-T-shirts-For-Women-Fashion-Long-sleeve-T-Shirt__11426.1524230269.jpg"/>
+			</a>
+		</li>
+		<li>
+			<div class="slidetitle"> 
+				<span>Sid</span>
+			</div>
+			<a href='#'>
+				<img src="men-s-fancy-t-shirt-500x500.jpg"/>
+			</a>
+		</li>
+		<li>
+			<div class="slidetitle"> 
+				<span>Batasa</span>
+			</div>
+			<a href='#'>
+				<img src="71XvfrsCNqL._UL1500_.jpg"/>
+			</a>
+		</li>
+	</ul>
+	</div>
+</div>
+
+
+
+
+<div class="slider">
+
+
+
+
+<div class="car">
+
+<input class="dot" type="radio" name="position" checked />
+  <input class="dot" type="radio" name="position" />
+  <input class="dot" type="radio" name="position" />
+  <input class="dot" type="radio" name="position" />
+  <input class="dot" type="radio" name="position" />
+  <main id="carousel">
+    <div class="item"><img class="img" src="4179946767354929eb8bf10137f20e8e.jpg"></div>
+    <div class="item"><img class="img" src="4179946767354929eb8bf10137f20e8e.jpg"></div>
+    <div class="item"><img class="img" src="4179946767354929eb8bf10137f20e8e.jpg"></div>
+    <div class="item"><img class="img" src="4179946767354929eb8bf10137f20e8e.jpg"></div>
+    <div class="item"><img class="img" src="4179946767354929eb8bf10137f20e8e.jpg"></div>
+    <main>
+      </div>
+</div>
+
+</body>
+</html>
